@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Map Exploration</title>
+    <meta name="description" content="Exploring Google Maps API with JS">
+    <meta name="author" content="Audrey Gehring">
+    <link href='./main.css' type='text/css' rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="callout"></div>
+      <select id="selectLocation">
+        <option value="" disabled selected="selected">Select Location</option>
+      </select>
+    <div class="callout" id="vertical"></div>
+    <div id="map" style=''></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key={ENV["GOOGLE_MAPS_API_KEY"]}&callback=initMap" async defer ></script>
+    <script src='./main.js'></script>
+  </body>
+</html>
